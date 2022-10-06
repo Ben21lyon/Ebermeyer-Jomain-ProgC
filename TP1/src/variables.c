@@ -1,46 +1,34 @@
-#include <stdio.h>
+#include <stdio.h> // headers
+
 int main(){
+    signed char ch = 'b';
+    unsigned char charun = 'b';
+    signed short shsi = 10;
+    unsigned short ush = 10;
+    signed int a = 12;
+    unsigned int b = 12;
+    signed long int c = 400;
+    unsigned long int d = 400;
+    signed long long int e = 15000;
+    unsigned long long int f = 15000;
+    float g = 1.456;
+    double h = 1.28;
+    long double i = 1.111112;
+    
+   
 
-signed char cara = 't';
-signed short court = -5;
-signed int entier = 50;
-signed long int nbl = 10000L;
-signed long long int nbll = 2000000LL;
-float pi = 3.14;
-double l = 3.14E3;
-long double ll = 3.18E10L;
-printf("!!! Il n'existe pas de signed ou unsigned pour float et double \n!!!")
+    printf("La variable signé (char) %c est de taille %ld octets\n",ch,sizeof(ch));
+    printf("La variable non signé b est de taille %ld octets\n\n",sizeof(charun));
+    printf("La variable signé (short) 10 est de taille %ld octets\n",sizeof(shsi));
+    printf("La variable non signé 10 est de taille %ld octets\n\n",sizeof(ush));
+    printf("La variable signé (int) 12 est de taille %ld octets\n",sizeof(a));
+    printf("La variable non signé 12 est de taille %ld octets\n\n",sizeof(b));
+    printf("La variable signé (long int) 400 est de taille %ld octets\n",sizeof(c));
+    printf("La variable non signé 400 est de taille %ld octets\n\n",sizeof(d));
+    printf("La variable signé (long long int) 15000 est de taille %ld octets\n",sizeof(e));
+    printf("La variable non signé 15000 est de taille %ld octets\n\n",sizeof(f));
+    printf("La variable (float) 1.456 est de taille %ld octets\n",sizeof(g));
+    printf("La variable (double) 1.28 est de taille %ld octets\n",sizeof(h));
+    printf("La variable (long double) 1.111112 est de taille %ld octets\n",sizeof(i));
 
-printf("Affichage signé\n\n");
-
-printf("%ld,octet pour char\n",sizeof(cara));
-printf("%ld,octet pour short\n",sizeof(court));
-printf("%ld,octet pour int\n",sizeof(entier));
-printf("%ld,octet pour long int\n",sizeof(nbl));
-printf("%ld,octet pour long long int \n",sizeof(nbll));
-printf("%ld,octet pour float \n",sizeof(pi));
-printf("%ld,octet pour double\n",sizeof(l));
-printf("%ld,octet pour long double\n\n",sizeof(ll));
-
-printf("Affichage non signé\n\n");
-
-unsigned char cara1 = 't';
-unsigned short court1 = -5;
-unsigned int entier1 = 50;
-unsigned long int nbl1 = 10000L;
-unsigned long long int nbll1 = 2000000LL;
-float pi1 = 3.14;
-double l1 = 3.14E3;
-long double ll1 = 3.18E10L;
-
-printf("%ld,octet pour char\n",sizeof(cara1));
-printf("%ld,octet pour short\n",sizeof(court1));
-printf("%ld,octet pour int\n",sizeof(entier1));
-printf("%ld,octet pour long int\n",sizeof(nbl1));
-printf("%ld,octet pour long long int \n",sizeof(nbll1));
-printf("%ld,octet pour float \n",sizeof(pi1));
-printf("%ld,octet pour double\n",sizeof(l1));
-printf("%ld,octet pour long double\n",sizeof(ll1));
-
-return 0;
 }
